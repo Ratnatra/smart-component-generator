@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ratna Dharasri Panda Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+
+<div >
+
+    <!-- HEADER -->
+    <header class="hero-header">
+
+        <h1>Ratna Dharasri Panda</h1>
+
+        <p>Software Engineer | Frontend Developer</p>
+
+        <hr>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <hr>
+
+    </header>
+
+    <!-- BENTO GRID (IMPORTANT FIX) -->
+    <div class="bento">
+
+        <!-- ABOUT -->
+        <section id="about" class="card about">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am a B.Tech Data Science graduate from Manipal University Jaipur.
+                Currently working as a Software Engineer at Apmosys Products.
+                Passionate about Generative AI, Machine Learning, Data Science, and building intelligent applications powered by Large Language Models.
+            </p>
+
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="card skills">
+
+            <h2>Technical Skills</h2>
+
+            <ul class="skill-list">
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">Angular.js</li>
+                <li class="skill">Typescript</li>
+                <li class="skill">Prompt Engineering</li>
+                <li class="skill">Figma</li>
+                <li class="skill">Git & GitHub</li>
+            </ul>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="card experience">
+
+            <h2>Work Experience</h2>
+
+            <article>
+
+                <h3>Software Engineer</h3>
+                <p>Apmosys Products Pvt. Ltd.</p>
+
+                <ul>
+                    <li>PDF Accessibility Remediation</li>
+                    <li>HTML Semantic Structure Remediation</li>
+                    <li>Accessibility Testing</li>
+                    <li>Defect Tracking and Reporting</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="card projects">
+
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project">
+                    <h3>AI Resume Analyzer</h3>
+                    <p>Compares resumes with job descriptions and suggests improvements.</p>
+                    <p class="tech">Python · NLP · Generative AI</p>
+                </div>
+
+                <div class="project">
+                    <h3>PDF Question Answering System</h3>
+                    <p>RAG-based system for querying PDFs using LLMs.</p>
+                    <p class="tech">Python · RAG · Vector DB · LLM</p>
+                </div>
+
+                <div class="project">
+                    <h3>AI Interview Assistant</h3>
+                    <p>Generates interview questions and evaluates answers.</p>
+                    <p class="tech">Python · Gen AI · HTML</p>
+                </div>
+
+                <div class="project">
+                    <h3>Cybersecurity Chatbot</h3>
+                    <p>Explains OWASP and security concepts using AI.</p>
+                    <p class="tech">Python · Cybersecurity · Gen AI</p>
+                </div>
+
+                <div class="project">
+                    <h3>Authentication Flow Analyzer</h3>
+                    <p>Detects authentication and session vulnerabilities.</p>
+                    <p class="tech">Python · Security Testing</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="card contact">
+
+            <h2>Contact</h2>
+
+            <p>Email: ratna31831@gmail.com</p>
+            <p>LinkedIn: www.linkedin.com/in/ratna-panda/</p>
+            <p>GitHub: www.github.com/ratnatra</p>
+
+        </section>
+
+    </div>
+
+    <section class="thank-you-section" id="thank-you" aria-labelledby="thank-you-title">
+        <div class="thank-you-backdrop" aria-hidden="true"></div>
+        <div class="thank-you-stars" aria-hidden="true"></div>
+
+        <div class="thank-you-card">
+            <p class="thank-you-kicker">Closing Note</p>
+            <h2 class="thank-you-title" id="thank-you-title">Thank You for Visiting My Portfolio</h2>
+
+            <p class="thank-you-text thank-you-text--first">
+                I hope you enjoyed exploring my projects and journey.
+            </p>
+            <p class="thank-you-text thank-you-text--second">
+                If you'd like to collaborate, discuss opportunities, or simply say hello, I'd love to connect with you.
+            </p>
+            <p class="thank-you-text thank-you-text--third">
+                Let's Build Something Amazing Together.
+            </p>
+
+            <div class="thank-you-social" aria-label="Social links">
+                <a class="social-link social-link--1" href="https://www.linkedin.com/in/ratna-panda/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                    in
+                </a>
+                <a class="social-link social-link--2" href="https://github.com/ratnatra" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                    gh
+                </a>
+                <a class="social-link social-link--3" href="mailto:ratna31831@gmail.com" aria-label="Email me">
+                    ✉
+                </a>
+            </div>
+
+            <a class="thank-you-button" href="mailto:ratna31831@gmail.com">Let's Connect</a>
+        </div>
+    </section>
+
+    <script>
+        const thankYouSection = document.querySelector('.thank-you-section');
+        const starLayer = document.querySelector('.thank-you-stars');
+
+        if (thankYouSection && starLayer) {
+            const starCount = 24;
+
+            for (let index = 0; index < starCount; index += 1) {
+                const star = document.createElement('span');
+                star.className = 'star';
+
+                const size = 1 + Math.random() * 3.2;
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                const duration = 5 + Math.random() * 6;
+                const delay = Math.random() * 3.5;
+                const opacity = 0.2 + Math.random() * 0.8;
+                const drift = (Math.random() > 0.5 ? 1 : -1) * (10 + Math.random() * 24);
+
+                star.style.setProperty('--size', `${size}px`);
+                star.style.setProperty('--left', `${left}%`);
+                star.style.setProperty('--top', `${top}%`);
+                star.style.setProperty('--duration', `${duration}s`);
+                star.style.setProperty('--delay', `${delay}s`);
+                star.style.setProperty('--opacity', opacity.toFixed(2));
+                star.style.setProperty('--drift', `${drift}px`);
+
+                starLayer.appendChild(star);
+            }
+
+            const revealSection = () => {
+                if (!('IntersectionObserver' in window)) {
+                    thankYouSection.classList.add('is-visible');
+                    return;
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            thankYouSection.classList.add('is-visible');
+                            observer.disconnect();
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                observer.observe(thankYouSection);
+            };
+
+            revealSection();
+        }
+    </script>
+
+</div>
+
+</body>
+</html>
